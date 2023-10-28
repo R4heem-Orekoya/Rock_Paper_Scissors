@@ -66,3 +66,9 @@
         width: 40px;
     } 
 }
+@media screen and (max-width: 450px) {
+    .selection__area{
+        width: min(250px, 100%);
+        margin-top: -70px;
+    }
+}
