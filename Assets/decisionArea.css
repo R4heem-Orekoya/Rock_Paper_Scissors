@@ -71,7 +71,7 @@
 
 @media screen and (max-width: 750px) { 
     .decision__area{
-        margin-top: -100px;
+        margin-top: -150px;
     }
     .decision__area > div{
         flex-direction: column-reverse;
@@ -97,7 +97,7 @@
     .decision__area .result{
         position: absolute;
         left: 50%;
-        bottom: 13%;
+        bottom: 10%;
         transform: translateX(-50%);
     }
 }
