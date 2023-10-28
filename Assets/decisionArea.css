@@ -1,0 +1,109 @@
+.decision__area{
+    width: min(800px, 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.decision__area > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    flex: 1;
+}
+.decision__area > div > div{
+    position: relative;
+    width: 200px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background: #fff;
+    display: grid;
+    place-items: center;
+    border-width: 20px;
+    border-style: solid;
+}
+.decision__area > div > div img{
+    width: 70px;
+    aspect-ratio: 1;
+    object-fit: contain;
+}
+.decision__area > div h2{
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+.decision__area > div > div.paper{
+    border-color: hsl(230, 89%, 65%);
+    box-shadow: 0 10px 0 hsl(230, 89%, 62%), inset 0 10px 0 hsla(217, 16%, 45%, 0.2);
+}
+.decision__area > div > div.scissors{
+    border-color: hsl(40, 84%, 53%);
+    box-shadow: 0 10px 0 hsl(39, 89%, 49%), inset 0 10px 0 hsla(217, 16%, 45%, 0.2);
+}
+.decision__area > div > div.rock{
+    border-color: hsl(349, 70%, 56%);
+    box-shadow: 0 10px 0 hsl(349, 71%, 52%), inset 0 10px 0 hsla(217, 16%, 45%, 0.2);
+}
+.decision__area .result{
+    margin-top: 80px;
+    gap: 10px;
+}
+.decision__area .result h3{
+    color: #fff;
+    font-size: 30px;
+}
+.decision__area .result button{
+    padding: 10px 40px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 8px;
+    border: none;
+    background: #fff;
+    color: hsl(229, 25%, 31%);
+    transition: 0.35s ease;
+    cursor: pointer;
+}
+.decision__area .result button:hover{
+    color: hsl(349, 71%, 52%);
+}
+
+
+@media screen and (max-width: 750px) { 
+    .decision__area{
+        margin-top: -100px;
+    }
+    .decision__area > div{
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+    .decision__area > div > div{
+        width: 120px;
+        border-width: 10px;
+    }
+    .decision__area > div > div.paper{
+        box-shadow: 0 5px 0 hsl(230, 89%, 62%), inset 0 5px 0 hsla(217, 16%, 45%, 0.2);
+    }
+    .decision__area > div > div.scissors{
+        box-shadow: 0 5px 0 hsl(39, 89%, 49%), inset 0 5px 0 hsla(217, 16%, 45%, 0.2);
+    }
+    .decision__area > div > div.rock{
+        box-shadow: 0 5px 0 hsl(349, 71%, 52%), inset 0 5px 0 hsla(217, 16%, 45%, 0.2);
+    }
+    .decision__area > div > div img{
+        width: 40px;
+    }
+
+    .decision__area .result{
+        position: absolute;
+        left: 50%;
+        bottom: 13%;
+        transform: translateX(-50%);
+    }
+}
+@media screen and (max-width: 450px){
+    .decision__area > div h2{
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+}

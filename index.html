@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="Assets/main.css">
+</head>
+<body>
+    <header>
+        <h1>
+            ROCK <br> PAPER <br> SCISSORS
+        </h1>
+
+        <div class="score__area">
+            <h2>SCORE</h2>
+            <p class="score">0</p>
+        </div>
+    </header>
+
+    <div class="game__area">
+        <div class="selection__area">
+            <div class="rock" id="rock">
+                <img src="Assets/images/icon-rock.svg" alt="rock">
+            </div>
+            <div class="paper" id="paper">
+                <img src="Assets/images/icon-paper.svg" alt="paper">
+            </div>
+            <div class="scissors" id="scissors">
+                <img src="Assets/images/icon-scissors.svg" alt="">
+            </div>
+        </div>
+
+        <div class="decision__area hide">
+            <div class="player__decision">
+                <h2>YOU PICKED</h2>
+
+                <div>
+                    <!-- <img src="" alt=""> -->
+                </div>
+            </div>
+            <div class="result">
+                <h3> </h3>
+                <button class="play__again">PLAY AGAIN</button>
+            </div>
+            <div class="computer__decision">
+                <h2>THE HOUSE PICKED</h2>
+                <div
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="rules__backdrop">
+        <div class="rules">
+            <div class="head">
+                <h2>RULES</h2>
+
+                <button class="close">
+                    <img src="Assets/images/icon-close.svg" alt="icon-close">
+                </button>
+            </div>
+
+            <img src="Assets/images/image-rules.svg" alt="image-rules" class="rule__icon">
+        </div>
+    </div>
+
+    <button class="rules__btn">
+        RULES
+    </button>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
